@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections;
 using DG.Tweening;
+using Dialogues;
 using UnityEngine;
 
     public class Dialoguer : Singleton<Dialoguer>
     {
         public Sprite[] Sprites;
+        public DialogData[] DialogDatas;
+        
         public event Action OnDialogEnd;
         public float spl = 0.5f;
         
-        public void Show(DialogData dialog)
+        public void Show(DialogID id)
         {
-            StartCoroutine(ShowProcess(dialog));
+            StartCoroutine(ShowProcess(DialogDatas[(int) id]));
         }
 
         IEnumerator ShowProcess(DialogData dialog)

@@ -1,16 +1,13 @@
-﻿    public class DialogInteractor : InteractorBase
+﻿    using Dialogues;
+    using UnityEngine.Timeline;
+
+    public class DialogInteractor : InteractorBase
     {
-        public DialogData[] dialogs;
-
-        public int dialogIndex;
-
-        public int giverRequiredInex;
-        public InteractorBase giver;
+        public DialogID dialogIndex;
         
         public override void OnInteract()
         {
-            Dialoguer.Instance.Show(dialogs[dialogIndex]);
-            if (giver && dialogIndex == giverRequiredInex) giver.OnInteract();
+            Dialoguer.Instance.Show(dialogIndex);
         }
 
         public override string Name => "поговорить";
