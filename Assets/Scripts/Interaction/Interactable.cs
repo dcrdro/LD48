@@ -6,19 +6,17 @@ using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour
 {
-    public InteractorBase interactor;
+    public InteractorBase[] interactors;
     public bool disableAfterInteract;
     public Text interactText;
     public GameObject interactMessage;
-
-    public InteractorBase[] additionalInteractors;
     
     bool inRange;
 
     // Start is called before the first frame update
     void Start()
     {
-        interactText.text += interactor.Name;
+        interactText.text += interactors[0].Name;
         interactMessage.SetActive(false);
     }
 
@@ -28,8 +26,7 @@ public class Interactable : MonoBehaviour
         if (inRange && Input.GetKeyDown(KeyCode.E))
         {
             print("interacted");
-            interactor.OnInteract();
-            foreach (var additionalInteractor in additionalInteractors)
+            foreach (var additionalInteractor in interactors)
             {
                 additionalInteractor.OnInteract();
             }
