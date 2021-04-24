@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
-namespace OpachaTemplate.Core
-{
-    public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
+    public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
         private static T _instance;
 
@@ -19,4 +17,3 @@ namespace OpachaTemplate.Core
             }
         }
     }
-}
