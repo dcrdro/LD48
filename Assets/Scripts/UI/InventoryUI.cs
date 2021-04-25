@@ -13,6 +13,7 @@ using UnityEngine;
             var instance = Instantiate(itemUIPrefab, root);
             instance.SetIcon(data.icon);
             instance.SetName(data.name);
+            instance.SetIndex(items.Count + 1);
             items.Add(instance);
         }
         
@@ -21,5 +22,16 @@ using UnityEngine;
             var item =items.Find(i => i.name.text == data.name);
             Destroy(item.gameObject);
             items.Remove(item);
+        }
+
+        public void SelectItem(int index)
+        {
+            foreach (var itemUI in items)
+            {
+                itemUI.Select(false);
+            }
+
+            if (index != -1)
+                items[index].Select(true);
         }
     }
