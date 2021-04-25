@@ -46,6 +46,11 @@ using UnityEngine;
             }
             print("sel idx: " + selIdx);
             UiManager.Instance.InventoryUI.SelectItem(selIdx);
+
+            if (selectedItem != null && selectedItem.IsShowable)
+            {
+                UiManager.Instance.ShowItem(selectedItem.showUIObject);
+            }
         }
         
         void __print()

@@ -9,7 +9,6 @@ using DG.Tweening;
         
         public override void OnInteract()
         {
-            print("move");
             target.DOMove(shift, time).SetRelative();
         }
 

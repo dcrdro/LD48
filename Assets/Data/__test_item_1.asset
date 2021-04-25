@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: test_item
   icon: {fileID: 21300000, guid: e94fe7445778ca049b3456e97dae0022, type: 3}
+  showUIObject: {fileID: 6122112943491597642, guid: 65890b8d8c23d754e90c90e94a943fa7, type: 3}
