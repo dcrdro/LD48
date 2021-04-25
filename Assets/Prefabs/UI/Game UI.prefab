@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -354.0603, y: -11.082626}
+  m_AnchoredPosition: {x: -395.0604, y: -11.082626}
   m_SizeDelta: {x: 916.3179, y: 264.81}
   m_Pivot: {x: 1, y: 0.4581496}
 --- !u!222 &1509833862530224151
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ea68317357829eb4c8801a55f5363e58, type: 3}
+  m_Sprite: {fileID: -7580063039758227196, guid: 041ac29679a3ffa47a90c1669f4fa9a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -794,7 +794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -33, y: 0}
+  m_AnchoredPosition: {x: -74, y: 0}
   m_SizeDelta: {x: 264.80615, y: 264.8062}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &8559986534033594358
@@ -825,7 +825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2821076246914227456, guid: 041ac29679a3ffa47a90c1669f4fa9a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -951,14 +951,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6392157}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -3873102357573727352, guid: 041ac29679a3ffa47a90c1669f4fa9a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2821076246914227456, guid: 041ac29679a3ffa47a90c1669f4fa9a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
