@@ -37,7 +37,8 @@ public class Interactable : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent<Player>(out var chel))
+        var x = other.GetComponentInChildren<Player>();
+        if (x != null && x.TryGetComponent<Player>(out var chel))
         {
             inRange = true;
             // interactMessage.SetActive(true);
@@ -48,7 +49,8 @@ public class Interactable : MonoBehaviour
     
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.TryGetComponent<Player>(out var chel))
+        var x = other.GetComponentInChildren<Player>();
+        if (x != null && x.TryGetComponent<Player>(out var chel))
         {
             inRange = false;
             // interactMessage.SetActive(false);
