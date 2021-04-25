@@ -4,7 +4,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class MusicSystem : MonoBehaviour
+public class MusicSystem : Singleton<MusicSystem>
 {
     public enum environmentMusic
     {
@@ -22,8 +22,6 @@ public class MusicSystem : MonoBehaviour
     public AudioSource[] musicSources = new AudioSource[2];
     public bool playOnStart = true;
     
-    private float time = 0;
-
     private void Start()
     {
         if (playOnStart) changeEnvironment(environmentMusic.Peaceful);

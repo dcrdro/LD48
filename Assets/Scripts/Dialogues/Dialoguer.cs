@@ -11,28 +11,63 @@ using UnityEngine;
         
         public event Action OnDialogEnd;
         public float spl = 0.5f;
-        
+
+        private DialogData _activeDialogue;
+        private int _index = 0;
+        private Sequence _sequence;
+
         public void Show(DialogID id)
         {
-            StartCoroutine(ShowProcess(DialogDatas[(int) id]));
+            StartDialogue(DialogDatas[(int) id]);
         }
 
-        IEnumerator ShowProcess(DialogData dialog)
+        private void Update()
+        {
+            if (!_activeDialogue) return;
+            
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            {
+                if (_sequence != null && _sequence.IsPlaying())
+                {
+                    _sequence.Complete();
+                }
+                else
+                {
+                    ShowNextMonolog();
+                }
+            }
+        }
+
+        void StartDialogue(DialogData dialog)
         {
             // disable control
             UiManager.Instance.DialogUI.gameObject.SetActive(true);
+            
+            _activeDialogue = dialog;
+            _index = 0;
+            ShowMonolog(dialog.monologs[_index]);
+        }
 
-            foreach (var monolog in dialog.monologs)
-            {
-                ShowMonolog(monolog);
-                float len = monolog.phrase.Length * spl;
-                yield return new WaitForSeconds(len + 1);
-            }
+        void FinishDialogue()
+        {
             UiManager.Instance.DialogUI.DisableRoots();
             UiManager.Instance.DialogUI.gameObject.SetActive(false);
             // enable control
             
+            _activeDialogue = null;
+            
             OnDialogEnd?.Invoke();
+        }
+
+        void ShowNextMonolog()
+        {
+            if (++_index >= _activeDialogue.monologs.Length)
+            {
+                FinishDialogue();
+                return;
+            }
+            
+            ShowMonolog(_activeDialogue.monologs[_index]);
         }
 
         void ShowMonolog(DialogData.MonologData monologData)
@@ -44,7 +79,11 @@ using UnityEngine;
             var text = dialogUI.GetText(monologData.isLeft);
             text.text = "";
             float len = monologData.phrase.Length * spl;
-            text.DOText(monologData.phrase, len).SetEase(Ease.Linear);
+
+            _sequence = DOTween.Sequence();
+            _sequence.Append(text.DOText(monologData.phrase, len).SetEase(Ease.Linear));
+
+            _sequence.OnKill(() => _sequence = null);
 
         }
 

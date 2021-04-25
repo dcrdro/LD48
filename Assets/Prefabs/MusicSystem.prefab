@@ -53,6 +53,7 @@ MonoBehaviour:
   musicSources:
   - {fileID: 6939778415378425248}
   - {fileID: 2723423412960777815}
+  playOnStart: 0
 --- !u!82 &6939778415378425248
 AudioSource:
   m_ObjectHideFlags: 0
