@@ -4,13 +4,16 @@ using UnityEngine;
     public class Player : MonoBehaviour
     {
         public float moveSpeed = 1f;
+        public bool enableControl = true;
         public Animator animator;
-
+        
+        private bool facingRight = true;
         private Vector3 velocity;
-        public bool facingRight = true;
 
         void Update()
         {
+            if (!enableControl) return;
+            
             float hor = Input.GetAxis("Horizontal");
 
             velocity = Vector3.right * hor;
