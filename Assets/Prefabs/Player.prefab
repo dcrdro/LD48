@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: 4899691182315687296}
   - component: {fileID: 6352935540044016204}
   - component: {fileID: 1535309769094598416}
-  - component: {fileID: 4015624516682435620}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -136,7 +135,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1535309769094598416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -163,20 +162,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15.982124, y: 24.298216}
   m_EdgeRadius: 0
---- !u!114 &4015624516682435620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4961858929821478016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72e7b1a5e52845eca15eb22785c4a457, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 7
-  animator: {fileID: 7285015721361474664}
 --- !u!95 &7285015721361474664
 Animator:
   serializedVersion: 3
@@ -196,6 +181,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8174767890538557255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7018073199265720973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72e7b1a5e52845eca15eb22785c4a457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 4899691182315687296}
+  moveSpeed: 7
+  enableControl: 1
+  animator: {fileID: 7285015721361474664}
+  footsteps:
+  - {fileID: 8300000, guid: 0219dd5b660e4244baf1c79dc58e0ad2, type: 3}
+  - {fileID: 8300000, guid: 9008b679f3268cc4ba30bf6c4d9f8f74, type: 3}
 --- !u!1001 &2972859062970660776
 PrefabInstance:
   m_ObjectHideFlags: 0

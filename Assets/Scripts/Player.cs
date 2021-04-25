@@ -1,15 +1,19 @@
 ﻿using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-    public class Player : MonoBehaviour
+public class Player : MonoBehaviour
     {
-        public float moveSpeed = 1f;
+        public Transform parent;
+        public float moveSpeed = 7f;
         public bool enableControl = true;
         public Animator animator;
+
+        public AudioClip[] footsteps;
         
         private bool facingRight = true;
         private Vector3 velocity;
-
+        
         void Update()
         {
             if (!enableControl) return;
@@ -18,7 +22,7 @@ using UnityEngine;
 
             velocity = Vector3.right * hor;
             animator.SetFloat("Velocity", Mathf.Abs(velocity.x));
-            transform.position += velocity * (moveSpeed * Time.deltaTime);
+            parent.position += velocity * (moveSpeed * Time.deltaTime);
 
             if (velocity.x < 0 && facingRight)
             {
@@ -37,5 +41,10 @@ using UnityEngine;
             Vector3 scale = transform.localScale;
             scale.x *= -1;
             transform.localScale = scale;
+        }
+
+        private void Footstep()
+        {
+            AudioSystem.Instance.PlaySound(footsteps[Random.Range(0, 2)]);
         }
     }
