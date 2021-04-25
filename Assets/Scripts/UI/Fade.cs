@@ -20,6 +20,6 @@ public class Fade : MonoBehaviour
 
     public void FadeTo(float to, float duration = 5f)
     {
-        image.DOFade(0f, duration);
+        image.DOFade(0f, duration).OnStart(() => image.enabled = true).OnComplete(() => image.enabled = false);
     }
 }
