@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: __test_dialog
   m_EditorClassIdentifier: 
   monologs:
-  - phrase: Hi!
+  - phrase: Hi! Hi! Hi! Hi!
     PersID: 0
   - phrase: Hi motherfucker
     PersID: 1
