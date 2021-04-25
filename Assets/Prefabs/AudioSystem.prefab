@@ -141,4 +141,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 490153550662874337}
-  audio: {fileID: 0}

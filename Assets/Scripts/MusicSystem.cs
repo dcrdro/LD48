@@ -4,7 +4,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class MusicSystem : MonoBehaviour
+public class MusicSystem : Singleton<MusicSystem>
 {
     public enum environmentMusic
     {
