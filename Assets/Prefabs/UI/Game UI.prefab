@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8539954b4952aa45a6e101ff6358727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 5
+  duration: 3
   fadeOnStart: 1
 --- !u!1 &3923325833252934406
 GameObject:

@@ -8,16 +8,16 @@ public class Interactable : MonoBehaviour
 {
     public InteractorBase[] interactors;
     public bool disableAfterInteract;
-    public Text interactText;
-    public GameObject interactMessage;
+    //public Text interactText;
+    //public GameObject interactMessage;
     
     bool inRange;
 
     // Start is called before the first frame update
     void Start()
     {
-        interactText.text += interactors[0].Name;
-        interactMessage.SetActive(false);
+        // interactText.text += interactors[0].Name;
+        // interactMessage.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class Interactable : MonoBehaviour
         if (other.TryGetComponent<Player>(out var chel))
         {
             inRange = true;
-            interactMessage.SetActive(true);
+            // interactMessage.SetActive(true);
 
             print("enter interact");
         }
@@ -51,7 +51,7 @@ public class Interactable : MonoBehaviour
         if (other.TryGetComponent<Player>(out var chel))
         {
             inRange = false;
-            interactMessage.SetActive(false);
+            // interactMessage.SetActive(false);
 
             print("exit interact");
         }
