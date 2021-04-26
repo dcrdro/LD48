@@ -202,7 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactors:
   - {fileID: 1824455866997580203}
-  disableAfterInteract: 0
+  disableAfterInteract: 1
 --- !u!114 &1824455866997580203
 MonoBehaviour:
   m_ObjectHideFlags: 0

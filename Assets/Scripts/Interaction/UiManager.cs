@@ -5,6 +5,7 @@ using UnityEngine;
     {
         public Transform showRoot;
         public GameObject interObj;
+        public GameObject titry;
         
         public DialogUI DialogUI;
         public InventoryUI InventoryUI;
@@ -51,6 +52,8 @@ using UnityEngine;
             player.DoApplyRLeg();
 
             yield return new WaitForSeconds(2f);
-            ScenesManager.Instance.goToLevel(0);
+            FadeManager.Instance.FadeTo(0, 3f);
+            yield return new WaitForSeconds(3f);
+            titry.SetActive(true);
         }
     }
