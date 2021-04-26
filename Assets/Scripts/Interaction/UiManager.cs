@@ -46,7 +46,7 @@ using UnityEngine;
         IEnumerator FinishProcess()
         {
             var player = FindObjectOfType<Player>();
-            player.enableControl = true;
+            player.enableControl = false;
             
             MusicSystem.Instance.changeEnvironment(MusicSystem.environmentMusic.Transformation);
             yield return new WaitForSeconds(1f);
@@ -59,5 +59,9 @@ using UnityEngine;
             FadeManager.Instance.FadeTo(1, 3f);
             yield return new WaitForSeconds(3f);
             titry.SetActive(true);
+            
+            yield return new WaitForSeconds(14);
+            Application.Quit();
+            
         }
     }
