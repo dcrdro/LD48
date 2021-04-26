@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
+  selectedItem: {fileID: 0}
+  beijd: {fileID: 11400000, guid: 45f7be16f44fba141aad7d94447f9d55, type: 2}
