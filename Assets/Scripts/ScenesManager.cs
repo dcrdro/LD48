@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Dialogues;
 using UnityEngine;
 
 public class ScenesManager : Singleton<ScenesManager>
@@ -64,6 +65,7 @@ public class ScenesManager : Singleton<ScenesManager>
                 break;
             case 3:
                 MusicSystem.Instance.changeEnvironment(MusicSystem.environmentMusic.Enigma);
+                Dialoguer.Instance.Show(DialogID.seeMohyly);
                 break;
         }
     }
