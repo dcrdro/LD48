@@ -26,12 +26,6 @@ public class ScenesManager : Singleton<ScenesManager>
         player.position = scenes[currentLevel].GetComponentInChildren<StartPoint>().transform.position;
     }
 
-    private void Start()
-    {
-        // StartCoroutine(goToLevel(1));
-        goToLevel(1);
-    }
-
     public void goToLevel(int levelNumber)
     {
         switchToLevel = levelNumber;
