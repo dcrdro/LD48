@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Bumaga s kodom
   m_EditorClassIdentifier: 
   name: Code paper
-  icon: {fileID: 9126987671944093711, guid: 041ac29679a3ffa47a90c1669f4fa9a2, type: 3}
+  icon: {fileID: 4577131299368057307, guid: 041ac29679a3ffa47a90c1669f4fa9a2, type: 3}
   showUIObject: {fileID: 6122112943491597642, guid: d17fb7789cee40b4789aba1322b3465e, type: 3}

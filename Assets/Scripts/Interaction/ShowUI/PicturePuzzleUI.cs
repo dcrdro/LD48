@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -40,6 +41,8 @@ namespace Interaction
             if (IsCompleted())
             {
                 Debug.Log("Complte)(");
+                UiManager.Instance.HideItem();
+                UiManager.Instance.StartCoroutine(FinishProcess());
             }
         }
 
@@ -51,6 +54,18 @@ namespace Interaction
             }
 
             return true;
+        }
+
+        IEnumerator FinishProcess()
+        {
+            var player = FindObjectOfType<Player>();
+            player.enableControl = true;
+            
+            yield return new WaitForSeconds(1f);
+            player.DoApplyHead();
+
+            yield return new WaitForSeconds(2f);
+            ScenesManager.Instance.goToLevel(1);
         }
     }
 }

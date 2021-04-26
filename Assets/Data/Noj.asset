@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Noj
   m_EditorClassIdentifier: 
   name: Knife
-  icon: {fileID: -7580063039758227196, guid: 041ac29679a3ffa47a90c1669f4fa9a2, type: 3}
+  icon: {fileID: 21300000, guid: ea68317357829eb4c8801a55f5363e58, type: 3}
   showUIObject: {fileID: 0}
