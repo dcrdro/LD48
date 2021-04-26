@@ -103,6 +103,35 @@ public class Player : MonoBehaviour
         
     }
 
+    public void DoApplyHead()
+    {
+        ApplyPart(pigHeadPart);
+    }
+    public void DoApplyBody()
+    {
+        ApplyBody();
+    }
+    public void DoApplyLHand()
+    {
+        ApplyLeftHand();
+    }
+    public void DoApplyRHand()
+    {
+        ApplyPart(pigRHandPart);
+    }
+    public void DoApplyLLeg()
+    {
+        ApplyPart(pigLLegPart);
+        coll.offset = colPos;
+        coll.size = colSize;
+    }
+    public void DoApplyRLeg()
+    {
+        ApplyPart(pigRLegPart);
+        coll.offset = colPos;
+        coll.size = colSize;
+    }
+
     void ApplyBody()
     {
         ApplyPart(pigBodyPart);
