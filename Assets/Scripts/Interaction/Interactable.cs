@@ -26,13 +26,18 @@ public class Interactable : MonoBehaviour
         if (inRange && Input.GetKeyDown(KeyCode.E))
         {
             print("interacted");
+            bool needDisable = true;
             foreach (var additionalInteractor in interactors)
             {
                 Debug.Log("additionalInteractor = " + additionalInteractor);
                 additionalInteractor.OnInteract();
+                if (!additionalInteractor.CanInteract) needDisable = false;
             }
-            GetComponent<Collider2D>().enabled = !disableAfterInteract;
-            enabled = !disableAfterInteract;
+            if (disableAfterInteract && needDisable)
+            {
+                GetComponent<Collider2D>().enabled = !disableAfterInteract;
+                enabled = false;
+            }
         }
     }
 
@@ -43,6 +48,7 @@ public class Interactable : MonoBehaviour
         {
             inRange = true;
             // interactMessage.SetActive(true);
+            UiManager.Instance.ShowInterText();
 
             print("enter interact");
         }
@@ -55,6 +61,7 @@ public class Interactable : MonoBehaviour
         {
             inRange = false;
             // interactMessage.SetActive(false);
+            UiManager.Instance.HideInterText();
 
             print("exit interact");
         }

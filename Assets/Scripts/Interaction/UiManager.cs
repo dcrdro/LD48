@@ -3,6 +3,7 @@
     public class UiManager : Singleton<UiManager>
     {
         public Transform showRoot;
+        public GameObject interObj;
         
         public DialogUI DialogUI;
         public InventoryUI InventoryUI;
@@ -30,4 +31,7 @@
                 Inventory.Instance.SelectItem(-1);
             }
         }
+
+        public void ShowInterText() => interObj.SetActive(true);
+        public void HideInterText() => interObj.SetActive(false);
     }
