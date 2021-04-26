@@ -45,6 +45,9 @@ using UnityEngine;
             
             _activeDialogue = dialog;
             _index = 0;
+
+            ScenesManager.Instance.player.DisableControl();
+            
             ShowMonolog(dialog.monologs[_index]);
         }
 
@@ -55,6 +58,8 @@ using UnityEngine;
             // enable control
             
             _activeDialogue = null;
+
+            ScenesManager.Instance.player.enableControl = true;
             
             OnDialogEnd?.Invoke();
         }

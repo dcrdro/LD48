@@ -275,6 +275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogIndex: 0
+  giveItem: 1
+  item: {fileID: 11400000, guid: c3c1da24a1e6120419a02369753dd208, type: 2}
 --- !u!1 &2275841088953620492
 GameObject:
   m_ObjectHideFlags: 0

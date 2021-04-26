@@ -9,9 +9,10 @@ public class ScenesManager : Singleton<ScenesManager>
     public GameObject[] scenes;
 
     public int currentLevel = 0;
+    public Player player;
 
     private int switchToLevel;
-    private Transform player;
+    private Transform playerParent;
 
     private void Awake()
     {
@@ -22,8 +23,10 @@ public class ScenesManager : Singleton<ScenesManager>
         
         scenes[currentLevel].SetActive(true);
 
-        player = FindObjectOfType<Player>().transform.parent.transform;
-        player.position = scenes[currentLevel].GetComponentInChildren<StartPoint>().transform.position;
+        player = FindObjectOfType<Player>();
+        playerParent = player.transform.parent.transform;
+        playerParent.position = scenes[currentLevel].GetComponentInChildren<StartPoint>().transform.position;
+        switchState();
     }
 
     public void goToLevel(int levelNumber)
@@ -39,8 +42,29 @@ public class ScenesManager : Singleton<ScenesManager>
         
         scenes[currentLevel].SetActive(false);
         scenes[switchToLevel].SetActive(true);
-        player.position = scenes[switchToLevel].GetComponentInChildren<StartPoint>().transform.position;
+        playerParent.position = scenes[switchToLevel].GetComponentInChildren<StartPoint>().transform.position;
+        currentLevel = switchToLevel;
 
+        switchState();
         FadeManager.Instance.FadeTo(0f);
+    }
+
+    private void switchState()
+    {
+        switch (currentLevel)
+        {
+            case 0:
+                MusicSystem.Instance.changeEnvironment(MusicSystem.environmentMusic.Peaceful);
+                break;
+            case 1:
+                MusicSystem.Instance.changeEnvironment(MusicSystem.environmentMusic.Nostalgia);
+                break;
+            case 2:
+                MusicSystem.Instance.changeEnvironment(MusicSystem.environmentMusic.Office);
+                break;
+            case 3:
+                MusicSystem.Instance.changeEnvironment(MusicSystem.environmentMusic.Enigma);
+                break;
+        }
     }
 }

@@ -9,7 +9,10 @@ public class MusicSystem : Singleton<MusicSystem>
     public enum environmentMusic
     {
         Peaceful,
-        Depretion
+        Nostalgia,
+        Office,
+        Enigma,
+        Transformation
     }
     
     [Serializable]

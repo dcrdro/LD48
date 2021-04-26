@@ -240,7 +240,6 @@ MonoBehaviour:
   animator: {fileID: 1232850645363415497}
   footsteps:
   - {fileID: 8300000, guid: 0219dd5b660e4244baf1c79dc58e0ad2, type: 3}
-  - {fileID: 8300000, guid: 9008b679f3268cc4ba30bf6c4d9f8f74, type: 3}
   coll: {fileID: 7011225060309357233}
   pigHeadPart:
     rend: {fileID: 2585713146549623362}

@@ -49,7 +49,13 @@ MonoBehaviour:
   - environment: 0
     audio: {fileID: 8300000, guid: 09eb8d107cd1ef249827b46127e6cf93, type: 3}
   - environment: 1
-    audio: {fileID: 8300000, guid: 794d75cfaa323e546a58e4765973618a, type: 3}
+    audio: {fileID: 8300000, guid: a23695f23e7683b4480fba7714a95ae7, type: 3}
+  - environment: 2
+    audio: {fileID: 8300000, guid: c46e2f57088f1694d92b8dd3b4a2852e, type: 3}
+  - environment: 3
+    audio: {fileID: 8300000, guid: 51886a0af4449db4e88a3a9aebcf8df0, type: 3}
+  - environment: 4
+    audio: {fileID: 8300000, guid: 537b1e4094084814ca759d9c79564bc3, type: 3}
   musicSources:
   - {fileID: 6939778415378425248}
   - {fileID: 2723423412960777815}

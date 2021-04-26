@@ -2,7 +2,8 @@
 {
     public enum DialogID
     {
-        __test1 = 0,
-        __test2,
+        npc_1 = 0,
+        npc_2,
+        wake_up
     }
 }

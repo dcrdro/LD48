@@ -1,5 +1,6 @@
 ﻿using System;
 using DG.Tweening;
+using Dialogues;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -34,6 +35,18 @@ public class Player : MonoBehaviour
 
     public Vector2 colPos, colSize;
 
+    private void Start()
+    {
+        // Dialoguer.Instance.Show(DialogID.wake_up);
+    }
+
+    public void DisableControl()
+    {
+        enableControl = false;
+        velocity = Vector3.zero;
+        animator.SetFloat("Velocity", Mathf.Abs(velocity.x));
+    }
+
     void Update()
     {
         if (!enableControl) return;
@@ -67,7 +80,7 @@ public class Player : MonoBehaviour
 
     private void Footstep()
     {
-        AudioSystem.Instance.PlaySound(footsteps[Random.Range(0, 2)]);
+        AudioSystem.Instance.PlaySound(footsteps[Random.Range(0, footsteps.Length)]);
     }
 
     void UpdateSwitch()
