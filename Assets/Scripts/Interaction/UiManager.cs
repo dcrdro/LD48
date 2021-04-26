@@ -22,6 +22,7 @@
 
         public void HideItem()
         {
+            Debug.Log("showingItem = " + showingItem);
             if (showingItem != null)
             {
                 Destroy(showingItem);
