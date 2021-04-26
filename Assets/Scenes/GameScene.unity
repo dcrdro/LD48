@@ -2713,10 +2713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: npc
       objectReference: {fileID: 0}
-    - target: {fileID: 3021555359136462144, guid: 0dc1dc2034931a8458ccb908e83ec81d, type: 3}
-      propertyPath: interactors.Array.data[0]
-      value: 
-      objectReference: {fileID: 3246557434282113688}
+    - target: {fileID: 1689867169684280092, guid: 0dc1dc2034931a8458ccb908e83ec81d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dc1dc2034931a8458ccb908e83ec81d, type: 3}
 --- !u!1001 &3547413993194473128
@@ -3371,7 +3371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &7125704902566632366
 GameObject:
   m_ObjectHideFlags: 0

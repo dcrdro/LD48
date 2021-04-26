@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactors:
-  - {fileID: 0}
+  - {fileID: 3278199176964882982}
   disableAfterInteract: 0
 --- !u!114 &3278199176964882982
 MonoBehaviour:
