@@ -8,6 +8,12 @@ using UnityEngine;
 
         public ItemData selectedItem;
 
+        public ItemData beijd;
+        void Start()
+        {
+            AddItem(beijd);
+        }
+
         public void AddItem(ItemData data)
         {
             items.Add(data);
