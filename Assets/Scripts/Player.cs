@@ -72,34 +72,34 @@ public class Player : MonoBehaviour
 
     void UpdateSwitch()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            ApplyPart(pigHeadPart);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            ApplyBody();
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            ApplyLeftHand();
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            ApplyPart(pigRHandPart);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            ApplyPart(pigLLegPart);
-            coll.offset = colPos;
-            coll.size = colSize;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
-            ApplyPart(pigRLegPart);
-            coll.offset = colPos;
-            coll.size = colSize;
-        }
+        // if (Input.GetKeyDown(KeyCode.Alpha1))
+        // {
+        //     ApplyPart(pigHeadPart);
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha2))
+        // {
+        //     ApplyBody();
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha3))
+        // {
+        //     ApplyLeftHand();
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha4))
+        // {
+        //     ApplyPart(pigRHandPart);
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha5))
+        // {
+        //     ApplyPart(pigLLegPart);
+        //     coll.offset = colPos;
+        //     coll.size = colSize;
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha6))
+        // {
+        //     ApplyPart(pigRLegPart);
+        //     coll.offset = colPos;
+        //     coll.size = colSize;
+        // }
         
     }
 
