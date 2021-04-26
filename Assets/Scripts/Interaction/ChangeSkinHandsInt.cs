@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
 using DG.Tweening;
+using Dialogues;
 
-    public class ChangeSkinHandsInt : InteractorBase
+public class ChangeSkinHandsInt : InteractorBase
     {
         public AudioClip clip;
         public override void OnInteract()
@@ -32,5 +33,6 @@ using DG.Tweening;
             
             yield return new WaitForSeconds(2f);
             player.enableControl = true;
+            Dialoguer.Instance.Show(DialogID.transformation_3);
         }
     }
