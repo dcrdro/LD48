@@ -3569,10 +3569,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7642489782776459099, guid: 69b95e49c72b744419570adb5930ce4d, type: 3}
-      propertyPath: currentLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7642489782776459099, guid: 69b95e49c72b744419570adb5930ce4d, type: 3}
       propertyPath: scenes.Array.data[0]
       value: 
       objectReference: {fileID: 1260320573}

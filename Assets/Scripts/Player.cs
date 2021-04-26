@@ -139,7 +139,7 @@ public class Player : MonoBehaviour
         ApplyPart(pigLLegPart);
         coll.offset = colPos;
         coll.size = colSize;
-        Dialoguer.Instance.Show(DialogID.transformation_4);
+        // Dialoguer.Instance.Show(DialogID.transformation_4);
     }
     public void DoApplyRLeg()
     {
