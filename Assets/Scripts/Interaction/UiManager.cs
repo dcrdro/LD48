@@ -47,6 +47,7 @@ using UnityEngine;
             var player = FindObjectOfType<Player>();
             player.enableControl = true;
             
+            MusicSystem.Instance.changeEnvironment(MusicSystem.environmentMusic.Transformation);
             yield return new WaitForSeconds(1f);
             player.DoApplyLLeg();
             player.DoApplyRLeg();
