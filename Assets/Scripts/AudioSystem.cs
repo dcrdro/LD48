@@ -10,10 +10,6 @@ public class AudioSystem : Singleton<AudioSystem>
 
     public void PlaySound(AudioClip clip)
     {
-        if (!musicSource.isPlaying)
-        {
-            musicSource.clip = clip;
-            musicSource.Play();
-        }
+        musicSource.PlayOneShot(clip);
     }
 }
