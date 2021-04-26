@@ -17,7 +17,7 @@ public class FadeManager : Singleton<FadeManager>
 
     void Start()
     {
-        // FadeTo(0f, fadeOnStart ? duration : 0f);
+        FadeTo(0f, fadeOnStart ? duration : 0f);
     }
     
     

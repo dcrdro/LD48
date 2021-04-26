@@ -2717,14 +2717,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2097369815657996807, guid: 6b44b80d0b2ab934e824ed88cc944338, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2105969949102134963, guid: 6b44b80d0b2ab934e824ed88cc944338, type: 3}
-      propertyPath: fadeOnStart
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3923325833252934406, guid: 6b44b80d0b2ab934e824ed88cc944338, type: 3}
       propertyPath: m_Name
       value: Game UI
