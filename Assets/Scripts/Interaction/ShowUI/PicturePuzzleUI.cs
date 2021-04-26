@@ -59,12 +59,14 @@ namespace Interaction
         IEnumerator FinishProcess()
         {
             var player = FindObjectOfType<Player>();
-            player.enableControl = true;
+            player.enableControl = false;
             
             yield return new WaitForSeconds(1f);
             player.DoApplyHead();
 
             yield return new WaitForSeconds(2f);
+            player.enableControl = true;
+
             ScenesManager.Instance.goToLevel(1);
         }
     }

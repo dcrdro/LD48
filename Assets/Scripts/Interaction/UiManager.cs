@@ -52,7 +52,7 @@ using UnityEngine;
             player.DoApplyRLeg();
 
             yield return new WaitForSeconds(2f);
-            FadeManager.Instance.FadeTo(0, 3f);
+            FadeManager.Instance.FadeTo(1, 3f);
             yield return new WaitForSeconds(3f);
             titry.SetActive(true);
         }
