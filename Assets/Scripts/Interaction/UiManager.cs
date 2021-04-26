@@ -41,7 +41,8 @@ using UnityEngine;
 
         public void ShowInterText() => interObj.SetActive(true);
         public void HideInterText() => interObj.SetActive(false);
-        
+
+        public AudioClip final;
         IEnumerator FinishProcess()
         {
             var player = FindObjectOfType<Player>();
@@ -51,6 +52,8 @@ using UnityEngine;
             yield return new WaitForSeconds(1f);
             player.DoApplyLLeg();
             player.DoApplyRLeg();
+            AudioSystem.Instance.PlaySound(final);
+
 
             yield return new WaitForSeconds(2f);
             FadeManager.Instance.FadeTo(1, 3f);

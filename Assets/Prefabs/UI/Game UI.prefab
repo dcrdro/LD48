@@ -528,6 +528,7 @@ MonoBehaviour:
   titry: {fileID: 6155468063605714222}
   DialogUI: {fileID: 6635703026666150505}
   InventoryUI: {fileID: 7345339136664814888}
+  final: {fileID: 8300000, guid: b9a5ef000783bbd4985417b23d640a34, type: 3}
 --- !u!1 &3923325834235958603
 GameObject:
   m_ObjectHideFlags: 0

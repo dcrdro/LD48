@@ -29,7 +29,6 @@ public class ChangeSkinHandsInt : InteractorBase
             player.DoApplyLHand();
             player.DoApplyRHand();
             
-            AudioSystem.Instance.PlaySound(clip);
             
             yield return new WaitForSeconds(2f);
             player.enableControl = true;
