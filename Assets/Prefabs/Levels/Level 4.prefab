@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 5395224769784892043}
   - component: {fileID: 218082857966056012}
   - component: {fileID: 4240804780626364227}
+  - component: {fileID: 1824455866997580203}
   m_Layer: 0
   m_Name: Mohyly
   m_TagString: Untagged
@@ -199,8 +200,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02437212d06b63a43a6d63f93cea524c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactors: []
+  interactors:
+  - {fileID: 1824455866997580203}
   disableAfterInteract: 0
+--- !u!114 &1824455866997580203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330313394130345638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 536fee98abfa45bebb3843dd1b03dda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showObject: {fileID: 6122112943491597642, guid: 4d8e9db75cb381e48a6aeea8982d8344, type: 3}
 --- !u!1 &2089171282960245940
 GameObject:
   m_ObjectHideFlags: 0
