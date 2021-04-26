@@ -47,5 +47,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6fce32bdb81a8314f88e0beaaa3bdf8b, type: 3}
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   DialogDatas:
-  - {fileID: 11400000, guid: faef0aae1dd1ec944bdea5d8532e9537, type: 2}
+  - {fileID: 11400000, guid: de28ef86c6f34dc458b4797ae3ffb298, type: 2}
+  - {fileID: 11400000, guid: c05529e3550497f4f921b7815a114000, type: 2}
+  - {fileID: 11400000, guid: 2ad848173aa0cd74a9581f4672e1a796, type: 2}
+  - {fileID: 11400000, guid: 46bb26cee81f52c4c86dfafed4b6f914, type: 2}
+  - {fileID: 11400000, guid: 6ddd3969a23b49b4b8f114cc908d0943, type: 2}
+  - {fileID: 11400000, guid: cf50f5e3edc49254bbe56586866f11f9, type: 2}
+  - {fileID: 11400000, guid: 291b833236970e54f8a333fb82951b85, type: 2}
+  - {fileID: 11400000, guid: 7b7706a8a47390c488a4d8e29d2fe560, type: 2}
+  - {fileID: 11400000, guid: 2c860acf31071c14bbfd661b4f772eae, type: 2}
+  - {fileID: 11400000, guid: 1be9989015bbcda48a5bcc7a61d102cd, type: 2}
   spl: 0.15

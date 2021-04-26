@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        // Dialoguer.Instance.Show(DialogID.wake_up);
+        Dialoguer.Instance.Show(DialogID.wakeUp);
     }
 
     public void DisableControl()
