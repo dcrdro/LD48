@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 1509605953707254804}
   - component: {fileID: 661243872866737648}
   - component: {fileID: 2167020759587560835}
+  - component: {fileID: 6604559126349596909}
   m_Layer: 0
   m_Name: Medved
   m_TagString: Untagged
@@ -352,6 +353,7 @@ MonoBehaviour:
   - {fileID: 4179622979587054741}
   - {fileID: 661243872866737648}
   - {fileID: 2167020759587560835}
+  - {fileID: 6604559126349596909}
   item: {fileID: 11400000, guid: 49a1f071375bf1c47844c860eca0c26d, type: 2}
 --- !u!114 &661243872866737648
 MonoBehaviour:
@@ -381,6 +383,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Behaviour: {fileID: 8997736362401972375}
   isEnabled: 1
+--- !u!114 &6604559126349596909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2587782982556539010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac380e4b67ec6b741b25560d8d01f78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogIndex: 1
+  giveItem: 0
+  item: {fileID: 0}
 --- !u!1 &2986721601899483340
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2986721601899483340}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.59, y: 2.6, z: -13.298071}
+  m_LocalPosition: {x: 1.1, y: -0.7, z: -13.298071}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4134158693014826982}
@@ -631,6 +648,7 @@ GameObject:
   - component: {fileID: 2024467850585873578}
   - component: {fileID: 8756502116631562967}
   - component: {fileID: 4914126801066835347}
+  - component: {fileID: 7368187968717596602}
   m_Layer: 0
   m_Name: Gol
   m_TagString: Untagged
@@ -766,6 +784,7 @@ MonoBehaviour:
   - {fileID: 2024467850585873578}
   - {fileID: 8756502116631562967}
   - {fileID: 4914126801066835347}
+  - {fileID: 7368187968717596602}
   disableAfterInteract: 1
 --- !u!114 &2024467850585873578
 MonoBehaviour:
@@ -808,6 +827,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rend: {fileID: 8633586103083933582}
   sprite: {fileID: 21300000, guid: ea68317357829eb4c8801a55f5363e58, type: 3}
+--- !u!114 &7368187968717596602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6176093218142244195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac380e4b67ec6b741b25560d8d01f78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogIndex: 0
+  giveItem: 0
+  item: {fileID: 0}
 --- !u!1 &7794999651196836595
 GameObject:
   m_ObjectHideFlags: 0

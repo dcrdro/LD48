@@ -119,10 +119,12 @@ public class Player : MonoBehaviour
     public void DoApplyHead()
     {
         ApplyPart(pigHeadPart);
+        Dialoguer.Instance.Show(DialogID.transformation_1);
     }
     public void DoApplyBody()
     {
         ApplyBody();
+        Dialoguer.Instance.Show(DialogID.transformation_2);
     }
     public void DoApplyLHand()
     {
@@ -137,6 +139,7 @@ public class Player : MonoBehaviour
         ApplyPart(pigLLegPart);
         coll.offset = colPos;
         coll.size = colSize;
+        Dialoguer.Instance.Show(DialogID.transformation_4);
     }
     public void DoApplyRLeg()
     {
