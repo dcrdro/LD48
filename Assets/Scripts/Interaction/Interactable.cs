@@ -28,6 +28,7 @@ public class Interactable : MonoBehaviour
             print("interacted");
             foreach (var additionalInteractor in interactors)
             {
+                Debug.Log("additionalInteractor = " + additionalInteractor);
                 additionalInteractor.OnInteract();
             }
             GetComponent<Collider2D>().enabled = !disableAfterInteract;
